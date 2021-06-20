@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!--Responsive meta tag to make this webpage page look good on phones-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Logo-->
+		<link rel="shortcut icon" type="image/jpg" href="assets/Logo.jpg" />
+		<!--Page title-->
+		<title>Home 🏠</title>
+		<!--Styles.css file because it is important-->
+		<link rel="stylesheet" href="styles.css">
+		<!--Script.js file because it is super important-->
+		<script type="module" src="script.js"></script>
+		<!--Google fonts at https://fonts.google.com/ -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<ul>
+			<li><a href="home.html"><img id="spacer" src="assets/FullLogo.jpg"></a></li>
+			<li class="dropdown">
+				<a href="tracker.html" class="dropbtn">My Health Tracker</a>
+				<div class="dropdown-content">
+					<a href="calendar.html">My Calendar</a>
+					<a href="goals.html">My Goals</a>
+					<a href="achievements.html">My Achievements</a>
+					<a href="notes.html">My Notes</a>
+					<a href="questions.html">My Questions</a>
+				</div>
+			</li>
+			<li><a href="mood.html">My Mood Tracker</a></li>
+			<li><a href="kids.html">Kid's Corner</a></li>
+			<li><a href="account.html">My Account</a></li>
+			<li><a onclick='logout()'>Logout</a></li>
+		</ul>
+		<main>
+			<!--Mainly working here-->
+			<h1>Welcome back!</h1>
+			<img id="home-image" src="assets/Background.jpg">
+			<h2>Joke of the Day:</h2>
+			<div class="body-text">
+				<p>Question: Does an apple a day keep the doctor away?
+				<p>
+				<p>Answer: Only if you aim it well enough.
+				<p>
+			</div>
+			<h2>Fun Activities for Your Physical and Mental Health:</h2>
+			<div class="body-text">
+				<h3>Active Game Night</h3>
+				<p>For your next family game night, try playing some games that get you to move around a bit! Try playing games like Twister or even video games like Just Dance or an active VR game!</p>
+				<h3>Coloring</h3>
+				<p>After a long day at work or school, try breaking out your colored pencils, markers, or crayons and do some coloring! Coloring helps relax the amygdala, the fear center of your brain, so it allows you to relax after a stressful day.</p>
+			</div>
+			<a class="coping" href="https://my.clevelandclinic.org/health/articles/6392-stress-coping-with-lifes-stressors">Click for an Article on Coping Mechanisms</a>
+
+		</main>
+		<footer>
+			<a href="aboutus.html">About Us</a>
+			<p>© 2021 My Health Tracker</p>
+		</footer>
+	</body>
+
+</html>

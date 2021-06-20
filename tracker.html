@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!--Responsive meta tag to make this webpage page look good on phones-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Logo-->
+		<link rel="shortcut icon" type="image/jpg" href="assets/Logo.jpg" />
+		<!--Page title-->
+		<title>My Health Tracker 💪</title>
+		<!--Styles.css file because it is important-->
+		<link rel="stylesheet" href="styles.css">
+		<!--Script.js file because it is super important-->
+		<script type="module" src="script.js"></script>
+		<!--Google fonts at https://fonts.google.com/ -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<ul>
+			<li><a href="home.html"><img id="spacer" src="assets/FullLogo.jpg"></a></li>
+			<li class="dropdown">
+				<a href="tracker.html" class="dropbtn">My Health Tracker</a>
+				<div class="dropdown-content">
+					<a href="calendar.html">My Calendar</a>
+					<a href="goals.html">My Goals</a>
+					<a href="achievements.html">My Achievements</a>
+					<a href="notes.html">My Notes</a>
+					<a href="questions.html">My Questions</a>
+				</div>
+			</li>
+			<li><a href="mood.html">My Mood Tracker</a></li>
+			<li><a href="kids.html">Kid's Corner</a></li>
+			<li><a href="account.html">My Account</a></li>
+			<li><a class="button" onclick='logout()'>Logout</a></li>
+		</ul>
+		<main>
+			<div class="block">
+				<h2>Welcome to My Health Tracker!</h2>
+				<p>Use the dropdown in the navigation bar above to go through your tracks, avilable as My Calendar, My Goals and Achievements, and My Notes and Questions. </p>
+				<p>Never forget another appointment, and never forget another question that you should've asked your doctor!</p>
+				<p>Thanks for choosing My Health Tracker. Enjoy!</p>
+			</div>
+			<div id='background'></div>
+		</main>
+		<footer>
+			<a href="aboutus.html">About Us</a>
+			<p>© 2021 My Health Tracker</p>
+		</footer>
+	</body>
+
+</html>

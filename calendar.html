@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!--Responsive meta tag to make this webpage page look good on phones-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Logo-->
+		<link rel="shortcut icon" type="image/jpg" href="assets/Logo.jpg" />
+		<!--Page title-->
+		<title>My Calendar 📅</title>
+		<!--Styles.css file because it is important-->
+		<link rel="stylesheet" href="styles.css">
+		<!--Script.js file because it is super important-->
+		<script type="module" src="script.js"></script>
+		<!--Google fonts at https://fonts.google.com/ -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<ul>
+			<li><a href="home.html"><img id="spacer" src="assets/FullLogo.jpg"></a></li>
+			<li class="dropdown">
+				<a href="tracker.html" class="dropbtn">My Health Tracker</a>
+				<div class="dropdown-content">
+					<a href="calendar.html">My Calendar</a>
+					<a href="goals.html">My Goals</a>
+					<a href="achievements.html">My Achievements</a>
+					<a href="notes.html">My Notes</a>
+					<a href="questions.html">My Questions</a>
+				</div>
+			</li>
+			<li><a href="mood.html">My Mood Tracker</a></li>
+			<li><a href="kids.html">Kid's Corner</a></li>
+			<li><a href="account.html">My Account</a></li>
+			<li><a class="button" onclick='logout()'>Logout</a></li>
+		</ul>
+		<main class="calendar">
+			<h1>Welcome to My Calendar!</h1>
+			<p>Never miss another appointment! Make sure that you are up to date with your trusty calendar. </p>
+			<br>
+			<div>
+				<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=NDM1bHZrYmhmajFsN3AybmxibXRjdGEyZ2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=NWFuajJpcWo0bDlkcjVsbmdyMDBuZmsxMDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23EF6C00&amp;color=%23D81B60&amp;showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;title=My%20Health%20Tracker" style="border-width:0" width="850" height="600" frameborder="0" scrolling="no"></iframe>
+			</div>
+			<br>
+			<h2>
+				Want to add a new event?
+			</h2>
+			<p>
+				Click the button below!
+			</p>
+			<div class="newpad">
+				<button class="addnew" type="button">
+					<a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NXFzbXVmZnQycHJkZTZxNjNjNmozYml2bTEgNWFuajJpcWo0bDlkcjVsbmdyMDBuZmsxMDhAZw&amp;tmsrc=5anj2iqj4l9dr5lngr00nfk108%40group.calendar.google.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+				</button>
+			</div>
+			<br><br>
+			<div class="edithow">
+				<h2>Not sure how to edit an existing event?</h2>
+				<p>1. Find an existing event.</p>
+				<p>2. Click on the existing event. A pop-up will pop up, as shown below.</p>
+				<img id="appoint" src="https://tongworld.qoom.space/hydrangeahacks/assets/Appointment.jpg">
+				<p>3. Click on "more details >>".</p>
+				<p>4. When you are redirected to your personal calendar, click on the desired event.</p>
+				<p>5. Locate the leftmost icon of the 4 icons on the pop-up. It should be the symbol of a pencil, as shown below.</p>
+				<img id="appoint2" src="https://tongworld.qoom.space/hydrangeahacks/assets/Appointment2.jpg">
+				<p>6. Once you click on the "Edit" button, you will be taken to the page shown below.</p>
+				<img id="appoint3" src="https://tongworld.qoom.space/hydrangeahacks/assets/Appointment3.jpg">
+				<p>7. There, you can edit the date, time, and a lot more, to your satisfaction.</p>
+				<p>8. Have fun editing your event!</p>
+			</div>
+			<br><br>
+			<div class="deletehow">
+				<h2>Need help on deleting an existing event?</h2>
+				<p>1. Find the existing event.</p>
+				<p>2. Click on the existing event. A pop-up will pop up, as shown below.</p>
+				<img id="appoint" src="https://tongworld.qoom.space/hydrangeahacks/assets/Appointment.jpg">
+				<p>3. Click on "more details >>". </p>
+				<p>4. When you are redirected to your personal calendar, click on the desired event.</p>
+				<p>5. Locate the trash bin, and click on it, as shown below.</p>
+				<img id="appoint4" src="https://tongworld.qoom.space/hydrangeahacks/assets/Appointment4.jpg">
+				<p>6. Congratulations, your event has been deleted!</p>
+			</div>
+			<br><br>
+		</main>
+		<footer>
+			<a href="aboutus.html">About Us</a>
+			<p>© 2021 My Health Tracker</p>
+		</footer>
+	</body>
+
+</html>

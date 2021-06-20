@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!--Responsive meta tag to make this webpage page look good on phones-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Logo-->
+		<link rel="shortcut icon" type="image/jpg" href="assets/Logo.jpg" />
+		<!--Page title-->
+		<title>My Mood Tracker 🙂</title>
+		<!--Styles.css file because it is important-->
+		<link rel="stylesheet" href="styles.css">
+		<!--Script.js file because it is super important-->
+		<script src="script.js"></script>
+		<!--Google fonts at https://fonts.google.com/ -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<ul>
+			<li><a href="home.html"><img id="spacer" src="assets/FullLogo.jpg"></a></li>
+			<li class="dropdown">
+				<a href="tracker.html" class="dropbtn">My Health Tracker</a>
+				<div class="dropdown-content">
+					<a href="calendar.html">My Calendar</a>
+					<a href="goals.html">My Goals</a>
+					<a href="achievements.html">My Achievements</a>
+					<a href="notes.html">My Notes</a>
+					<a href="questions.html">My Questions</a>
+				</div>
+			</li>
+			<li><a href="mood.html">My Mood Tracker</a></li>
+			<li><a href="kids.html" class="dropbtn">Kid's Corner</a></li>
+			<li><a href="account.html">My Account</a></li>
+			<li><a onclick='logout()'>Logout</a></li>
+		</ul>
+
+		<main>
+			<h1>Welcome to the My Mood Tracker!</h1>
+			<h3>
+				How are you feeling today?
+			</h3>
+			<!--Start grid for the mood coding-->
+			<div class="grid-container">
+				<div class="grid-item">
+					<img src="https://tongworld.qoom.space/hydrangeahacks/assets/M9.png">
+					<button class="mood" id="bm9" onclick="p(); disableQ9()">Overjoyed!!</button>
+				</div>
+				<div class="grid-item">
+					<img src="https://tongworld.qoom.space/hydrangeahacks/assets/M8.png">
+					<button class="mood" id="bm8" onclick="p(); disableQ8()">Very, very happy!</button>
+				</div>
+				<div class="grid-item">
+					<img src="https://tongworld.qoom.space/hydrangeahacks/assets/M7.png">
+					<button class="mood" id="bm7" onclick="p(); disableQ7()">Very happy</button>
+				</div>
+				<div class="grid-item">
+					<img src="https://tongworld.qoom.space/hydrangeahacks/assets/M6.png">
+					<button class="mood" id="bm6" onclick="p(); disableQ6()">Happy</button>
+				</div>
+				<div class="grid-item">
+					<img src="https://tongworld.qoom.space/hydrangeahacks/assets/M5.png">
+					<button class="mood" id="bm5" onclick="n(); disableQ5()">Stressed</button>
+				</div>
+				<div class="grid-item">
+					<img src="https://tongworld.qoom.space/hydrangeahacks/assets/M4.png">
+					<button class="mood" id="bm4" onclick="n(); disableQ4()">Sad</button>
+				</div>
+				<div class="grid-item">
+					<img src="https://tongworld.qoom.space/hydrangeahacks/assets/M3.png">
+					<button class="mood" id="bm3" onclick="n(); disableQ3()">Depressed</button>
+				</div>
+				<div class="grid-item">
+					<img src="https://tongworld.qoom.space/hydrangeahacks/assets/M2.png">
+					<button class="mood" id="bm2" onclick="n(); disableQ2()">I want to cry</button>
+				</div>
+				<div class="grid-item">
+					<img src="https://tongworld.qoom.space/hydrangeahacks/assets/M1.png">
+					<button class="mood" id="bm1" onclick="n(); disableQ1()">Angry</button>
+				</div>
+			</div>
+			<p id="result"></p>
+			<br>
+			<p>Feeling down? <a href="https://content.lifeisgood.com/50-ways-to-have-more-fun-today/">Have some fun within the hour by clicking here!</a></p>
+			<p>Missing somebody? <a href="https://www.hopkinsmedicine.org/health/caregiving/coping-with-loss">Click here to find how you can cope with your grief.</a></p>
+			<p>Just need a good laugh? <a href="https://bestlifeonline.com/funniest-memes-all-time/">Click here and have fun!!</a></p>
+			<!--button onclick="myFunction()">Click me!</button-->
+		</main>
+		<footer>
+			<a href="aboutus.html">About Us</a>
+			<p>© 2021 My Health Tracker</p>
+		</footer>
+	</body>
+
+</html>
